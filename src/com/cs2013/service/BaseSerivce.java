@@ -2,37 +2,42 @@ package com.cs2013.service;
 
 /**
  * 
- *»ù´¡service ½Ó¿Ú
+ * æœ€ä¸Šå±‚çš„æ¥å£
+ * 
  * @param <T>
  */
 public interface BaseSerivce<T> {
-	
+
 	/**
-	 * Ôö¼ÓÒ»ÌõĞÅÏ¢
+	 * å¢åŠ ä¸€æ¡ä¿¡æ¯
+	 * 
 	 * @param t
 	 * @throws Exception
 	 */
 	public void add(T t) throws Exception;
-	
+
 	/**
-	 * ²éÑ¯Ò»ÌõĞÅÏ¢
+	 * æŸ¥è¯¢ä¸€æ¡ä¿¡æ¯
+	 * 
 	 * @param id
 	 * @return
 	 * @throws Exception
 	 */
 	public T find(String id) throws Exception;
-	
+
 	/**
-	 * É¾³ıÒ»Ìõ¼ÇÂ¼
+	 * åˆ é™¤ä¸€æ¡è®°å½•
+	 * 
 	 * @param t
 	 * @throws Exception
 	 */
 	public void delete(T t) throws Exception;
-	
+
 	/**
-	 * ĞŞ¸ÄÒ»Ìõ¼ÇÂ¼
+	 * ä¿®æ”¹ä¸€æ¡è®°å½•
+	 * 
 	 * @param t
 	 * @throws Exception
 	 */
-	public void update(T t)throws Exception;
+	public void update(T t) throws Exception;
 }
